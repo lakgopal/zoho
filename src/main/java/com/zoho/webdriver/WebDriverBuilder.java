@@ -8,10 +8,9 @@ public class WebDriverBuilder {
 
 	public static WebDriver getDriver() {
 		if (driver == null) {
+			
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\surya\\Downloads\\chromedriver_win32\\chromedriver.exe");
-			System.setProperty("webdriver.firefox.bin",
-					"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		        "/Users/lakshmigopalakrishna/Downloads/chromedriver");
 			driver = new ChromeDriver();
 			return driver;
 		}
