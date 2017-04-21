@@ -39,8 +39,7 @@ public class ZohoTest {
 	{
 	  ZohoBugTracker mainPage = new ZohoBugTracker(driver);
 	  mainPage.load();
-	  ZohoLoginPage zohologinpage = mainPage.login();
-	  //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+      ZohoLoginPage zohologinpage = mainPage.login();
 	  ZohoHomePage zohohomepage = zohologinpage.Signin("autotestzoho@gmail.com", "AutoTest123");
 	  
 	  }
