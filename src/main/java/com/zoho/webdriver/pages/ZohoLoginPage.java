@@ -23,6 +23,7 @@ public class ZohoLoginPage {
     password.sendKeys(string2);
     WebElement linkElement1 = driver.findElement(By.id("submit_but"));
     linkElement1.click();
+    driver.switchTo().defaultContent();
     ZohoHomePage zohohomepage = new ZohoHomePage(driver);
     return zohohomepage;
   }
